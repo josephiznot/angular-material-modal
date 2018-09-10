@@ -1,8 +1,10 @@
-<i class="material-icons warning">warning</i>
-<h2 mat-dialog-title>Delete item</h2>
-<mat-dialog-content>Are you sure?</mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-raised-button [mat-dialog-close]="false">No</button>
-  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
-  <button mat-stroked-button color="warn" [mat-dialog-close]="true">Yes</button>
-</mat-dialog-actions>
+<main class="hlr-app-modal-container">
+  <i class="material-icons warning">error_outline</i>
+  <h2 mat-dialog-title>Delete item</h2>
+  <mat-dialog-content>Are you sure?</mat-dialog-content>
+  <mat-dialog-actions class="hlr-button-row">
+    <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+    <button mat-raised-button color="primary" [mat-dialog-close]="true">Yes</button>
+    <button mat-raised-button color="warn" [mat-dialog-close]="false">No</button>
+  </mat-dialog-actions>
+</main>

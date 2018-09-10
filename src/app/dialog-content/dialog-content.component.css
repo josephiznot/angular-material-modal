@@ -1,5 +1,14 @@
 .material-icons.warning {
-  color: #fb8c00;
-  font-size: 50px;
+  color: #f8bb86;
+  font-size: 100px;
   text-align: center;
+}
+.hlr-app-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.hlr-button-row button {
+  margin: 10px;
 }

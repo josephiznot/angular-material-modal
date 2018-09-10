@@ -19,7 +19,9 @@ export class ModalComponent implements OnInit {
   openDialog(id: number) {
     this.dialog
       .open(DialogContentComponent, {
-        disableClose: true
+        disableClose: true,
+        role: "alertdialog",
+        ariaLabel: "Confirmation dialog"
       })
       .afterClosed()
       .subscribe(result => {
