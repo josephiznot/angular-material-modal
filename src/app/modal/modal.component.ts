@@ -18,9 +18,12 @@ export class ModalComponent implements OnInit {
   products: Product[];
   openDialog(id: number) {
     this.dialog
-      .open(DialogContentComponent)
+      .open(DialogContentComponent, {
+        disableClose: true
+      })
       .afterClosed()
       .subscribe(result => {
+        console.log(result);
         let index = this.products.findIndex(e => e.id == id);
         result && this.products.splice(index, 1);
       });

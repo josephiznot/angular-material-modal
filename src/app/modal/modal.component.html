@@ -1,6 +1,6 @@
 <div *ngFor="let product of products">
   <div>
     {{product.item}}
-    <button (click)="openDialog(product.id)">delete item</button>
+    <button mat-button (click)="openDialog(product.id)">delete item</button>
   </div>
 </div>
